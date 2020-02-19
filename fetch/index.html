@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch</title>
+  </head>
+  <body>
+    <img id="testImg" src="" alt="test img" />
+    <script>
+      let obj1 = {
+        name: "Alex",
+        age: 22
+        // him: function() {
+        //   return `My name is ${this.name} and age ${this.age}`;
+        // }
+      };
+      // console.log(obj1.him());
+
+      // let obj2 = { ...obj1 };
+      // obj1.name = " NOT ALEX";
+      // let str1 = "Alex";
+      // let str2 = str1;
+      // str1 = "NOT Alex";
+
+      // console.log(obj2);
+
+      // console.table(obj1);
+
+      // const arr = [1, 2, 3, 4, 5, 6];
+      // console.log(arr);
+      // arr.reverse();
+      // const arrReverse = [...arr.reverse()];
+      // console.log(arrReverse);
+      // function res(somth) {
+      //   return somth;
+      // }
+
+      // const res1 = (somth, a, b, c) => {
+      //   return somth;
+      // };
+      // const testImg = document.getElementById("testImg");
+
+      // fetch("download.jpeg")
+      //   .then(res => {
+      //     console.log(res.status);
+
+      //     return res.blob();
+      //   })
+      //   .then(data => {
+      //     testImg.setAttribute("src", URL.createObjectURL(data));
+      //   })
+      //   .catch(err => console.log(err));
+
+      // JSON
+      // const json = JSON.stringify(obj1);
+      // console.log(JSON.stringify(obj1));
+      // const obj3 = JSON.parse(json);
+
+      fetch("https://ubereats-demo-api.herokuapp1.com/v1/places")
+        .then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err));
+    </script>
+  </body>
+</html>
