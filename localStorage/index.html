@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>localStorage</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="products">
+          <h2 class="products__header">Рекомендації</h2>
+          <div class="products__container product-list">
+            <div class="product-list__item product">
+              <div class="product__info">
+                <h3 class="product__title">Суп-крем грибний</h3>
+                <div class="product__price">34,00 грн.</div>
+                <form action="/" class="product__form">
+                  <div class="product__buy-wrapper">
+                    <input
+                      class="product__input"
+                      type="number"
+                      min="1"
+                      max="5"
+                      name="coutn_dish"
+                      value="1"
+                    />
+                    <button class="product__buy-btn" type="submit" data-id="1">
+                      Додати до замовлення
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="product__image-wrapper">
+                <img
+                  src="./images/1.jpeg"
+                  alt="Суп-крем грибний"
+                  class="product__image"
+                />
+              </div>
+            </div>
+
+            <div class="product-list__item product">
+              <div class="product__info">
+                <h3 class="product__title">Салат-фреш з лососем</h3>
+                <div class="product__price">83,00 грн.</div>
+                <form action="/" class="product__form">
+                  <div class="product__buy-wrapper">
+                    <input
+                      class="product__input"
+                      type="number"
+                      min="1"
+                      max="5"
+                      name="coutn_dish"
+                      value="1"
+                    />
+                    <button class="product__buy-btn" type="submit" data-id="2">
+                      Додати до замовлення
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="product__image-wrapper">
+                <img
+                  src="./images/2.jpeg"
+                  alt="Салат-фреш з лососем"
+                  class="product__image"
+                />
+              </div>
+            </div>
+
+            <div class="product-list__item product">
+              <div class="product__info">
+                <h3 class="product__title">Солянка м'ясна</h3>
+                <div class="product__price">34,00 грн.</div>
+                <form action="/" class="product__form">
+                  <div class="product__buy-wrapper">
+                    <input
+                      class="product__input"
+                      type="number"
+                      min="1"
+                      max="5"
+                      name="coutn_dish"
+                      value="1"
+                    />
+                    <button class="product__buy-btn" type="submit" data-id="3">
+                      Додати до замовлення
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="product__image-wrapper">
+                <img
+                  src="./images/3.jpeg"
+                  alt="Солянка м'ясна"
+                  class="product__image"
+                />
+              </div>
+            </div>
+
+            <div class="product-list__item product">
+              <div class="product__info">
+                <h3 class="product__title">Суп овочевий з куркою</h3>
+                <div class="product__price">29,00 грн.</div>
+                <form action="/" class="product__form">
+                  <div class="product__buy-wrapper">
+                    <input
+                      class="product__input"
+                      type="number"
+                      min="1"
+                      max="5"
+                      name="coutn_dish"
+                      value="1"
+                    />
+                    <button class="product__buy-btn" type="submit" data-id="4">
+                      Додати до замовлення
+                    </button>
+                  </div>
+                </form>
+              </div>
+              <div class="product__image-wrapper">
+                <img
+                  src="./images/4.jpeg"
+                  alt="Суп овочевий з куркою"
+                  class="product__image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart__header">Ваше замовлення</div>
+          <form action="" class="cart__form">
+            <ul class="cart__list">
+              <li class="cart__item">
+                <span class="cart__number">1</span>
+                <span class="cart__name">Суп-крем грибний</span>
+                <span class="cart__price">32,00 грн.</span>
+                <button class="cart__btn">X</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </main>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

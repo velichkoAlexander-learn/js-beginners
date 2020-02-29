@@ -1,0 +1,144 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products__header,
+.cart__header {
+  margin: 0;
+  padding-bottom: 24px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.products {
+  max-width: 75%;
+  width: 100%;
+}
+
+.product {
+  display: flex;
+  /* align-items: center; */
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  border-image: initial;
+}
+
+.product__image-wrapper {
+  width: 158px;
+  height: 158px;
+  flex-shrink: 0;
+}
+
+.product__info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.product__price {
+  padding-top: 8px;
+  margin-top: auto;
+}
+
+.product__image {
+  object-fit: cover;
+  width: 158px;
+  height: 158px;
+}
+
+.product__buy-btn {
+  padding: 8px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+}
+
+.product__buy-btn:hover {
+  box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.1);
+}
+
+.product__input {
+  padding: 5px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.product__buy-wrapper {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 16px;
+}
+
+.cart {
+  max-width: 23%;
+  width: 100%;
+}
+
+.cart__list {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 16px;
+  list-style: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(226, 226, 226);
+  border-image: initial;
+}
+
+.cart__item {
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart__btn {
+  /* margin-left: auto; */
+  border: none;
+  background: transparent;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+}
